@@ -1,0 +1,12 @@
+{
+  "NAME": "LAB1_JS_0050_ASYNC_AWAIT_TEST",
+  "VERSION": "1.0.0",
+  "MAIN": "INDEX.JS",
+  "SCRIPTS": {
+    "TEST": "ECHO \"ERROR: NO TEST SPECIFIED\" && EXIT 1"
+  },
+  "KEYWORDS": [],
+  "AUTHOR": "",
+  "LICENSE": "ISC",
+  "DESCRIPTION": ""
+}

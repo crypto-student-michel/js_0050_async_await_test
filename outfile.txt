@@ -1,0 +1,73 @@
+bun test v1.0.30 (1424a196)
+
+app.test.js:
+(pass) sum elementos de una array [0.10ms]
+(pass) sum elementos de una array vacio [0.02ms]
+(pass) mayores a un numero [0.07ms]
+(pass) mayores a un numero vacio [0.01ms]
+69 |         ];
+70 |     const num = 30;
+71 |     // act
+72 |     const result = mayoresEdad(personas, num);
+73 |     // assert
+74 |     expect(result).toEqual([ { nombre: 'Laura', edad: 40 }]);
+         ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[
+  {
+    nombre: "Laura",
+    edad: 40,
+  }
+][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:74:5
+(fail) mayores de edad [0.17ms]
+85 |         { nombre: 'Laura', edad: 40 }
+86 |     ];
+87 |     // act
+88 |     const result = mediaEdad(personas);
+89 |     // assert
+90 |     expect(result).toBe(23.333333333333332);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: 23.333333333333332
+Received: undefined
+
+      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:90:5
+(fail) media de edades [0.09ms]
+101 |         { nombre: 'Laura', edad: 40 }
+102 |     ];
+103 |     // act
+104 |     const result = mayoresIgualMedia(personas);
+105 |     // assert
+106 |     expect(result).toEqual([ { nombre: 'Pedro', edad: 30 }, { nombre: 'Maria', edad: 25 }, { nombre: 'Laura', edad: 40 }]);
+          ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[
+  {
+    nombre: "Pedro",
+    edad: 30,
+  }, {
+    nombre: "Maria",
+    edad: 25,
+  }, {
+    nombre: "Laura",
+    edad: 40,
+  }
+][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_basico_test/app.test.js:106:5
+(fail) mayores o iguales a la media [0.13ms]
+
+app2.test.js:
+(pass) mayor de 3 numeros [0.43ms]
+
+ 5 pass
+ 3 fail
+ 8 expect() calls
+Ran 8 tests across 2 files. [10.00ms]

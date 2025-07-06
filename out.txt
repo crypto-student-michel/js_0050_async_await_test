@@ -1,0 +1,96 @@
+bun test v1.0.30 (1424a196)
+
+app.test.js:
+(pass) sum elementos de una array [0.10ms]
+(pass) sum elementos de una array vacio [0.02ms]
+42 |     const arr = [33, 44, 33, 32, 21];
+43 |     const num = 33;
+44 |     // act
+45 |     const result = mayores(arr, num);
+46 |     // assert
+47 |     expect(result).toEqual([44]);
+         ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[ 44 ][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_lab1/app.test.js:47:5
+(fail) mayores a un numero [0.18ms]
+52 |     const arr = [];
+53 |     const num = 33;
+54 |     // act
+55 |     const result = mayores(arr, num);
+56 |     // assert
+57 |     expect(result).toEqual([]);
+         ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_lab1/app.test.js:57:5
+(fail) mayores a un numero vacio [0.09ms]
+69 |         ];
+70 |     const num = 30;
+71 |     // act
+72 |     const result = mayoresEdad(personas, num);
+73 |     // assert
+74 |     expect(result).toEqual([ { nombre: 'Laura', edad: 40 }]);
+         ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[
+  {
+    nombre: "Laura",
+    edad: 40,
+  }
+][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_lab1/app.test.js:74:5
+(fail) mayores de edad [0.19ms]
+85 |         { nombre: 'Laura', edad: 40 }
+86 |     ];
+87 |     // act
+88 |     const result = mediaEdad(personas);
+89 |     // assert
+90 |     expect(result).toBe(23.333333333333332);
+         ^
+error: expect(received).toBe(expected)
+
+Expected: 23.333333333333332
+Received: undefined
+
+      at /Users/joseviejo/curso/codecripto/labs/js_lab1/app.test.js:90:5
+(fail) media de edades [0.09ms]
+101 |         { nombre: 'Laura', edad: 40 }
+102 |     ];
+103 |     // act
+104 |     const result = mayoresIgualMedia(personas);
+105 |     // assert
+106 |     expect(result).toEqual([ { nombre: 'Pedro', edad: 30 }, { nombre: 'Maria', edad: 25 }, { nombre: 'Laura', edad: 40 }]);
+          ^
+error: expect(received).toEqual(expected)
+
+Expected: [32m[
+  {
+    nombre: "Pedro",
+    edad: 30,
+  }, {
+    nombre: "Maria",
+    edad: 25,
+  }, {
+    nombre: "Laura",
+    edad: 40,
+  }
+][0m
+Received: [31mundefined[0m
+
+      at /Users/joseviejo/curso/codecripto/labs/js_lab1/app.test.js:106:5
+(fail) mayores o iguales a la media [0.11ms]
+
+ 2 pass
+ 5 fail
+ 7 expect() calls
+Ran 7 tests across 1 files. [9.00ms]
